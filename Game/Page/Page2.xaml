@@ -1,0 +1,74 @@
+﻿<Page x:Class="Game.Page.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Game.Page"
+      mc:Ignorable="d" 
+      d:DesignHeight="775" d:DesignWidth="1487"
+      Title="Page2">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="194*"/>
+            <ColumnDefinition Width="1101.6"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="466*"/>
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="174*"/>
+            <RowDefinition Height="22*"/>
+
+        </Grid.RowDefinitions>
+        <Image Grid.ColumnSpan="3"
+               Source="/image/InMaHome.jpg"
+               Stretch="Fill" 
+               Grid.RowSpan="4" />
+        <Border
+            Grid.Column="0"
+            Background="Gray"          
+            Opacity="0.8"
+            Grid.Row="2"
+            Grid.ColumnSpan="3"
+            Grid.RowSpan="2" 
+            />
+        <Border
+            Grid.Row="1"
+            Grid.Column="1"
+            Height="50"
+            Background="Gray"          
+            Opacity="0.8"
+            
+            
+            
+            />
+        <TextBlock
+            Text="Мама:"
+            FontSize="35"
+            VerticalAlignment="Center"
+            Grid.Column="1" 
+            HorizontalAlignment="Center"
+           
+            FontFamily="Monotype Corsiva" Height="40" Grid.Row="1"  Width="100" 
+            
+            ></TextBlock>
+        <TextBlock  Grid.Row="2"
+            Grid.ColumnSpan="3"
+            TextWrapping="Wrap"
+            FontSize="34"
+            FontFamily="Monotype Corsiva" Margin="198,0,10.2,22.2" Grid.RowSpan="2" Height="175" VerticalAlignment="Bottom" 
+              
+            ><Run Text="*Раз мать вынула из печи пироги, и говорит ей:* "/><LineBreak/><Run Text="— Сходи-ка к бабушке понаведаться; сказывают она нездорова. Да снеси ей пирожок и горшочек масла."/></TextBlock>
+        <Image        
+               Grid.Row="2"
+               Source="/image/Mother.jpg" Stretch="Fill"  Grid.RowSpan="2" />
+
+        <Button
+            Opacity="0" 
+            Grid.RowSpan="3"
+            Grid.ColumnSpan="3"
+            Click="Button_Click"
+            />
+    </Grid>
+</Page>
